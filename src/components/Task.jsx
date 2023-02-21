@@ -1,5 +1,5 @@
 import { FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function Task(props) {
   const { task, deleteTask, toggleReminder } = props;
@@ -16,9 +16,7 @@ export default function Task(props) {
         />
       </h6>
       <p>{task.day}</p>
-      <p>
-        <Link to={`/task/${task.id}`}>View Details</Link>
-      </p>
+      <p>{/* <Link to={`/task/${task.id}`}>View Details</Link> */}</p>
     </div>
   );
 }
